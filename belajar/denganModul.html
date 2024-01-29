@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengan Modul</title>
+    <script type="module" src="scripts/hello.js"></script>
+</head>
+<body>
+    <script type="module"> // mendeklarasikan tipe module, karena default typenya adalah javascript
+
+        // melakukan import dari module
+
+        import {hello, hai, nama} from "./scripts/hello.js"
+        hello("James")
+        hai("Jono")
+
+        console.info(nama)
+    </script>
+</body>
+</html>
